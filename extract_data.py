@@ -19,6 +19,7 @@ class ZoteroWrapper:
     def duplicate_data(self, items: List[Any], multiplier: int) -> List[Any]:
         larger_items = [deepcopy(i) for _ in range(int(multiplier)) for i in items]
         return larger_items
+    #check validity of link
 
 USER_ID = 12354040
 USER_TYPE = 'user'
